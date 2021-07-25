@@ -1,13 +1,12 @@
-el_count = int(input("Введите количество элементов списка "))
-list1 = []
-num = 0
-a = 0
-while num < el_count:
-    list1.append(input("Введите значение "))
-    num += 1
+a = input('enter name')
+b = input('enter surname')
+c = int(input('enter year'))
+d = input('enter city')
+e = input('enter email')
 
-for el in range(int(len(list1)/2)):
-        list1[a], list1[a + 1] = list1 [a + 1], list1[a]
-        a += 2
 
-print(list1)
+def data(**kwargs):
+    print(kwargs)
+
+
+data(name=a, surname=b, year=c, city=d, email=e)
